@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rajatha.my_tracker.FeedingDataBase">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/ActionBar"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/F_TItem"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:gravity="center|left"
+        android:layout_marginTop="44dp"
+        android:text="Item"
+        android:textColor="@color/ActionBar"
+        android:textSize="20sp"
+        android:layout_marginStart="24dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:gravity="center|left"
+        android:layout_marginTop="26dp"
+        android:text="Calorie"
+        android:textColor="@color/ActionBar"
+        android:textSize="20sp"
+        android:layout_below="@+id/F_TItem"
+        android:layout_alignStart="@+id/F_TItem" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:gravity="center|left"
+        android:text="Quantity"
+        android:textColor="@color/ActionBar"
+        android:textSize="20sp"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/textView5"
+        android:layout_alignStart="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/textView7"
+        android:layout_below="@+id/textView7"
+        android:layout_marginTop="37dp"
+        android:gravity="center|left"
+        android:text="TCalories"
+        android:textColor="@color/ActionBar"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/F_Item"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/F_TItem"
+        android:layout_toEndOf="@+id/F_TItem"
+        android:gravity="center|left"
+        android:text="Item"
+        android:textColor="@color/ActionBar"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/F_calories"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5"
+        android:gravity="center|left"
+        android:text="Calories"
+        android:textColor="@color/ActionBar"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/F_TCalories"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="Total"
+        android:textColor="@color/ActionBar"
+        android:textSize="15sp"
+        android:layout_alignTop="@+id/textView9"
+        android:layout_toEndOf="@+id/textView9" />
+
+    <EditText
+        android:id="@+id/F_Quantity"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_toEndOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/F_TCal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/ActionBar"
+        android:textColor="#FFF"
+        android:text="Total Cal"
+        android:layout_marginEnd="34dp"
+        android:layout_alignBottom="@+id/F_TCalories"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/F_AddMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/ActionBar"
+        android:text="Add More"
+        android:textColor="#FFF"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/textView9"
+        android:layout_alignStart="@+id/textView9" />
+    <Button
+        android:id="@+id/F_Done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/ActionBar"
+        android:text="Done"
+        android:textColor="#FFF"
+        android:layout_alignBaseline="@+id/F_AddMore"
+        android:layout_alignBottom="@+id/F_AddMore"
+        android:layout_alignStart="@+id/F_TCal" />
+
+
+</RelativeLayout>

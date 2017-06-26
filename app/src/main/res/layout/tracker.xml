@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/DateImage"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="24dp"
+        app:srcCompat="@drawable/date" />
+
+    <TextView
+        android:id="@+id/Date"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/DateImage"
+        android:layout_toEndOf="@+id/DateImage"
+        android:gravity="left|center_vertical"
+        android:text="Date"
+        android:textColor="@color/ActionBar"
+        android:textSize="15sp" />
+
+    <ImageButton
+        android:id="@+id/breakfast"
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:background="@color/ActionBar"
+        android:padding="20dp"
+        android:paddingBottom="30dp"
+        app:srcCompat="@drawable/bf"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@+id/T_Name"
+        android:layout_toStartOf="@+id/Lunch"
+        android:layout_marginTop="16dp" />
+    <ImageButton
+        android:id="@+id/Lunch"
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:background="@color/ActionBar"
+        android:padding="10dp"
+        android:paddingBottom="30dp"
+        app:srcCompat="@drawable/lunch1"
+        android:layout_alignTop="@+id/breakfast"
+        android:layout_toEndOf="@+id/DateImage"
+        android:layout_marginStart="41dp" />
+
+
+    <ImageButton
+        android:id="@+id/Snacks"
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:background="@color/ActionBar"
+        android:padding="10dp"
+        android:paddingBottom="30dp"
+        app:srcCompat="@drawable/snacks"
+        android:layout_below="@+id/breakfast"
+        android:layout_alignStart="@+id/breakfast"
+        android:layout_marginTop="28dp" />
+
+
+    <ImageButton
+        android:id="@+id/Dinner"
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:layout_alignStart="@+id/Lunch"
+        android:layout_alignTop="@+id/Snacks"
+        android:background="@color/ActionBar"
+        android:padding="10dp"
+        android:paddingBottom="30dp"
+        app:srcCompat="@drawable/pasta_1" />
+
+
+    <ImageButton
+        android:id="@+id/Coffee"
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:background="@color/ActionBar"
+        android:padding="10dp"
+        android:paddingBottom="30dp"
+        app:srcCompat="@drawable/coffe"
+        android:layout_below="@+id/Snacks"
+        android:layout_alignStart="@+id/Snacks"
+        android:layout_marginTop="27dp" />
+
+    <ImageButton
+        android:id="@+id/Junk"
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:background="@color/ActionBar"
+        android:padding="10dp"
+        android:paddingBottom="30dp"
+        app:srcCompat="@drawable/junk"
+        android:layout_alignTop="@+id/Coffee"
+        android:layout_alignStart="@+id/Dinner" />
+
+    <TextView
+        android:id="@+id/T_Name"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/DateImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Name"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        android:textColor="@color/ActionBar"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/T1_Calories"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center|left"
+        android:textStyle="bold"
+        android:text="Calories"
+        android:textColor="@color/ActionBar"
+        android:textSize="15sp"
+        android:layout_below="@+id/Junk"
+        android:layout_toEndOf="@+id/breakfast" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Calories :"
+        android:textColor="@color/ActionBar"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_alignBaseline="@+id/T1_Calories"
+        android:layout_alignBottom="@+id/T1_Calories"
+        android:layout_toStartOf="@+id/Lunch" />
+
+
+</RelativeLayout>

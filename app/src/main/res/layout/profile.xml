@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="3dp"
+        android:paddingBottom="5dp"
+        android:background="@color/ActionBar"
+        app:srcCompat="@drawable/male_1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/pName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@color/ActionBar"
+        android:text="Name"
+        android:textColor="#FFF"
+        android:textSize="25sp"
+        android:textStyle="bold|normal" />
+
+    <TextView
+        android:id="@+id/pGender"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:text="Gender"
+        android:textColor="@color/ActionBar"
+        android:textSize="15sp"
+        android:layout_marginEnd="43dp"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_toStartOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/pAge"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:text="Age"
+        android:textColor="@color/ActionBar"
+        android:textSize="15sp"
+        android:layout_marginEnd="22dp"
+        android:layout_below="@+id/pName"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="47dp" />
+
+    <TextView
+        android:id="@+id/pHeight"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:text="Height in m"
+        android:textColor="@color/ActionBar"
+        android:textSize="15sp"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_alignStart="@+id/pGender" />
+
+    <TextView
+        android:id="@+id/pWeight"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:text="Weight in Kg"
+        android:textColor="@color/ActionBar"
+        android:textSize="15sp"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_alignStart="@+id/pAge" />
+
+    <TextView
+        android:id="@+id/pCBMI"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/pHeight"
+        android:layout_alignTop="@+id/imageView5"
+        android:gravity="center_vertical"
+        android:text="BMI"
+        android:textColor="@color/ActionBar"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/pTBMI"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:text="TBMI"
+        android:textColor="@color/ActionBar"
+        android:textSize="15sp"
+        android:layout_alignTop="@+id/imageView6"
+        android:layout_alignStart="@+id/pWeight" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/gender_1"
+        android:background="@color/ActionBar"
+        android:layout_marginEnd="30dp"
+        android:layout_alignTop="@+id/pGender"
+        android:layout_toStartOf="@+id/pGender" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/age_1"
+        android:layout_marginEnd="25dp"
+        android:background="@color/ActionBar"
+        android:layout_alignTop="@+id/pAge"
+        android:layout_toStartOf="@+id/pAge" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/height_1"
+        android:background="@color/ActionBar"
+        android:layout_below="@+id/imageView1"
+        android:layout_alignStart="@+id/imageView1"
+        android:layout_marginTop="43dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/weight_1"
+        android:background="@color/ActionBar"
+        android:layout_marginBottom="7dp"
+        android:layout_alignBottom="@+id/pHeight"
+        android:layout_alignStart="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/bmi_1"
+        android:background="@color/ActionBar"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignStart="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/ActionBar"
+        app:srcCompat="@drawable/target_1"
+        android:layout_alignTop="@+id/pCBMI"
+        android:layout_alignStart="@+id/imageView4" />
+</RelativeLayout>

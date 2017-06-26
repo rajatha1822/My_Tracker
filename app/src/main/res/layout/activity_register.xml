@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Container"
+    tools:context="com.example.rajatha.my_tracker.Register">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/ActionBar"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/UserNameT"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:text="Name"
+        android:textColor="@color/ActionBar"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/UName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="@color/ActionBar"
+        android:textSize="15sp"
+        android:inputType="textPersonName"
+        android:layout_alignBaseline="@+id/UserNameT"
+        android:layout_alignBottom="@+id/UserNameT"
+        android:layout_toEndOf="@+id/UserNameT" />
+
+    <EditText
+        android:id="@+id/Weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/WeighT"
+        android:layout_alignBottom="@+id/WeighT"
+        android:layout_toEndOf="@+id/WeighT"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Kg"
+        android:textColor="@color/ActionBar"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/Height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="m"
+        android:textColor="@color/ActionBar"
+        android:textSize="15sp"
+        android:layout_alignBaseline="@+id/HeightT"
+        android:layout_alignBottom="@+id/HeightT"
+        android:layout_toEndOf="@+id/HeightT" />
+
+    <EditText
+        android:id="@+id/Gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/GenderT"
+        android:layout_alignBottom="@+id/GenderT"
+        android:layout_toEndOf="@+id/GenderT"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/ActionBar"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/Age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/AgeT"
+        android:layout_alignBottom="@+id/AgeT"
+        android:layout_toEndOf="@+id/AgeT"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/ActionBar"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/GBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/BMIT"
+        android:layout_alignBottom="@+id/BMIT"
+        android:layout_toEndOf="@+id/BMIT"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="***"
+        android:textColor="@color/ActionBar"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/T_BMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/ActionBar"
+        android:textSize="15sp"
+        android:layout_below="@+id/GBMI"
+        android:layout_toEndOf="@+id/TBMIT" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/CPassword"
+        android:layout_below="@+id/T_BMI"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/ActionBar"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/CPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Password"
+        android:layout_marginTop="11dp"
+        android:layout_toEndOf="@+id/CPasswordT"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/ActionBar"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/GenderT"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:text="Gender"
+        android:textColor="@color/ActionBar"
+        android:textSize="15sp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/UName"
+        android:layout_toStartOf="@+id/UName" />
+
+    <TextView
+        android:id="@+id/AgeT"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/Gender"
+        android:layout_marginTop="15dp"
+        android:layout_toStartOf="@+id/Gender"
+        android:text="Age"
+        android:textColor="@color/ActionBar"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/WeighT"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/AgeT"
+        android:layout_marginTop="15dp"
+        android:layout_toStartOf="@+id/Gender"
+        android:text="Weight"
+        android:textColor="@color/ActionBar"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/HeightT"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/WeighT"
+        android:layout_marginTop="20dp"
+        android:layout_toStartOf="@+id/Gender"
+        android:text="Height"
+        android:textColor="@color/ActionBar"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/BMIT"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:text="BMI"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/ActionBar"
+        android:textSize="15sp"
+        android:layout_below="@+id/Height"
+        android:layout_toStartOf="@+id/Height" />
+
+
+    <Button
+        android:id="@+id/G_BMI"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginEnd="7dp"
+        android:background="@color/ActionBar"
+        android:text="Generate"
+        android:textColor="#FFF"
+        android:layout_alignBaseline="@+id/GBMI"
+        android:layout_alignBottom="@+id/GBMI"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/TBMIT"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:text="Target BMI"
+        android:textColor="@color/ActionBar"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:layout_alignBaseline="@+id/T_BMI"
+        android:layout_alignBottom="@+id/T_BMI"
+        android:layout_toStartOf="@+id/GBMI" />
+
+    <TextView
+        android:id="@+id/PasswordT"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:text="Password"
+        android:textColor="@color/ActionBar"
+        android:textSize="15sp"
+        android:layout_alignBottom="@+id/Password"
+        android:layout_toStartOf="@+id/Password" />
+
+    <TextView
+        android:id="@+id/CPasswordT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm Password"
+        android:textColor="@color/ActionBar"
+        android:textSize="15sp"
+        android:layout_alignBaseline="@+id/CPassword"
+        android:layout_alignBottom="@+id/CPassword"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/Reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/T_BMI"
+        android:layout_below="@+id/CPasswordT"
+        android:layout_marginStart="39dp"
+        android:background="@color/ActionBar"
+        android:textColor="#FFF"
+        android:layout_marginTop="20dp"
+        android:text="Register" />
+
+
+</RelativeLayout>
